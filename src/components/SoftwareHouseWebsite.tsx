@@ -39,31 +39,31 @@ const SoftwareHouseWebsite = () => {
       name: "Renaldy Bilal",
       role: "Backend Developer",
       image: "/images/team/renaldy.png",
-      skills: ["React", "Node.js", "Python"]
+      skills: ["Laravel", "Node.js", "Flutter"]
     },
     {
       name: "Imam Arsyawalfa",
       role: "Backend Developer",
       image: "/images/team/uus.jpeg",
-      skills: ["React Native", "Flutter", "Swift"]
+      skills: ["React Native", "Flutter", "Laravel"]
     },
     {
       name: "Arif Widi Atmaja",
       role: "Frontend Developer",
       image: "/images/team/arip.jpg",
-      skills: ["AWS", "Docker", "Kubernetes"]
+      skills: ["Next.js", "Figma", "Prototyping"]
     },
     {
       name: "Roidah",
       role: "Frontend Developer",
-      image: "#",
-      skills: ["Figma", "Adobe XD", "Prototyping"]
+      image: "/images/team/roidah.jpg",
+      skills: ["Next.js", "Adobe XD", "Prototyping"]
     },
     {
       name: "Mufaret",
       role: "DevOps Engineer",
-      image: "#",
-      skills: ["Figma", "Adobe XD", "Prototyping"]
+      image: "/images/team/farid.png",
+      skills: ["Linux", "CI/CD", "AWS", "Docker"]
     }
   ];
 
@@ -71,7 +71,7 @@ const SoftwareHouseWebsite = () => {
     {
       title: "E-Commerce Platform",
       category: "Web Application",
-      image: "#",
+      image: "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=400&h=300&fit=crop",
       description: "Full-featured e-commerce platform with payment integration and admin dashboard",
       tech: ["React", "Node.js", "MongoDB", "Stripe"],
       link: "#"
@@ -79,7 +79,7 @@ const SoftwareHouseWebsite = () => {
     {
       title: "Food Delivery App",
       category: "Mobile Application",
-      image: "#",
+      image: "https://images.unsplash.com/photo-1565299624946-b28f40a0ca4b?w=400&h=300&fit=crop",
       description: "Cross-platform food delivery app with real-time tracking and payments",
       tech: ["React Native", "Firebase", "Google Maps"],
       link: "#"
@@ -87,7 +87,7 @@ const SoftwareHouseWebsite = () => {
     {
       title: "Enterprise CRM",
       category: "Web Application",
-      image: "#",
+      image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=400&h=300&fit=crop",
       description: "Customer relationship management system for enterprise clients",
       tech: ["Next.js", "PostgreSQL", "Redis", "AWS"],
       link: "#"
@@ -95,7 +95,7 @@ const SoftwareHouseWebsite = () => {
     {
       title: "Fitness Tracker",
       category: "Mobile Application",
-      image: "#",
+      image: "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=400&h=300&fit=crop",
       description: "Health and fitness tracking app with wearable device integration",
       tech: ["Flutter", "Firebase", "HealthKit"],
       link: "#"
@@ -103,7 +103,7 @@ const SoftwareHouseWebsite = () => {
     {
       title: "Cloud Infrastructure",
       category: "DevOps & Server",
-      image: "#",
+      image: "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=400&h=300&fit=crop",
       description: "Scalable cloud infrastructure setup for a fintech startup",
       tech: ["AWS", "Docker", "Kubernetes", "Terraform"],
       link: "#"
@@ -111,7 +111,7 @@ const SoftwareHouseWebsite = () => {
     {
       title: "Real Estate Platform",
       category: "Web Application",
-      image: "#",
+      image: "https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=400&h=300&fit=crop",
       description: "Property listing and management platform with virtual tours",
       tech: ["React", "Python", "PostgreSQL", "AWS S3"],
       link: "#"
@@ -146,15 +146,15 @@ const SoftwareHouseWebsite = () => {
     // Create email body
     const emailBody = `Hi Strugg House Team,
 
-    Name: ${name}
-    Email: ${email}
-    Subject: ${subject}
+Name: ${name}
+Email: ${email}
+Subject: ${subject}
 
-    Message:
-    ${message}
+Message:
+${message}
 
-    Best regards,
-    ${name}`;
+Best regards,
+${name}`;
 
     // Create mailto link
     const mailtoLink = `mailto:strugghouse@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(emailBody)}`;
@@ -269,7 +269,7 @@ const SoftwareHouseWebsite = () => {
               </button>
               <button 
                 onClick={() => scrollToSection('contact')}
-                className="border border-blue-400 text-blue-400 hover:bg-blue-400 hover:text-white px-8 py-3 rounded-lg font-semibold transition-all shadow-md bg-white/20 backdrop-blur-sm"
+                className="bg-blue-400 hover:bg-blue-500 text-white px-8 py-3 rounded-lg font-semibold transition-all transform hover:scale-105 shadow-md"
               >
                 Get In Touch
               </button>
