@@ -56,13 +56,13 @@ const SoftwareHouseWebsite = () => {
     {
       name: "Roidah",
       role: "Frontend Developer",
-      image: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=300&h=300&fit=crop&crop=face",
+      image: "#",
       skills: ["Figma", "Adobe XD", "Prototyping"]
     },
     {
       name: "Mufaret",
       role: "DevOps Engineer",
-      image: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=300&h=300&fit=crop&crop=face",
+      image: "#",
       skills: ["Figma", "Adobe XD", "Prototyping"]
     }
   ];
@@ -71,7 +71,7 @@ const SoftwareHouseWebsite = () => {
     {
       title: "E-Commerce Platform",
       category: "Web Application",
-      image: "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=400&h=300&fit=crop",
+      image: "#",
       description: "Full-featured e-commerce platform with payment integration and admin dashboard",
       tech: ["React", "Node.js", "MongoDB", "Stripe"],
       link: "#"
@@ -79,7 +79,7 @@ const SoftwareHouseWebsite = () => {
     {
       title: "Food Delivery App",
       category: "Mobile Application",
-      image: "https://images.unsplash.com/photo-1565299624946-b28f40a0ca4b?w=400&h=300&fit=crop",
+      image: "#",
       description: "Cross-platform food delivery app with real-time tracking and payments",
       tech: ["React Native", "Firebase", "Google Maps"],
       link: "#"
@@ -87,7 +87,7 @@ const SoftwareHouseWebsite = () => {
     {
       title: "Enterprise CRM",
       category: "Web Application",
-      image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=400&h=300&fit=crop",
+      image: "#",
       description: "Customer relationship management system for enterprise clients",
       tech: ["Next.js", "PostgreSQL", "Redis", "AWS"],
       link: "#"
@@ -95,7 +95,7 @@ const SoftwareHouseWebsite = () => {
     {
       title: "Fitness Tracker",
       category: "Mobile Application",
-      image: "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=400&h=300&fit=crop",
+      image: "#",
       description: "Health and fitness tracking app with wearable device integration",
       tech: ["Flutter", "Firebase", "HealthKit"],
       link: "#"
@@ -103,7 +103,7 @@ const SoftwareHouseWebsite = () => {
     {
       title: "Cloud Infrastructure",
       category: "DevOps & Server",
-      image: "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=400&h=300&fit=crop",
+      image: "#",
       description: "Scalable cloud infrastructure setup for a fintech startup",
       tech: ["AWS", "Docker", "Kubernetes", "Terraform"],
       link: "#"
@@ -111,7 +111,7 @@ const SoftwareHouseWebsite = () => {
     {
       title: "Real Estate Platform",
       category: "Web Application",
-      image: "https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=400&h=300&fit=crop",
+      image: "#",
       description: "Property listing and management platform with virtual tours",
       tech: ["React", "Python", "PostgreSQL", "AWS S3"],
       link: "#"
@@ -146,15 +146,15 @@ const SoftwareHouseWebsite = () => {
     // Create email body
     const emailBody = `Hi Strugg House Team,
 
-Name: ${name}
-Email: ${email}
-Subject: ${subject}
+    Name: ${name}
+    Email: ${email}
+    Subject: ${subject}
 
-Message:
-${message}
+    Message:
+    ${message}
 
-Best regards,
-${name}`;
+    Best regards,
+    ${name}`;
 
     // Create mailto link
     const mailtoLink = `mailto:strugghouse@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(emailBody)}`;
