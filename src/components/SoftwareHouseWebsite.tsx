@@ -493,7 +493,7 @@ ${name}`;
               <div className="mt-8">
                 <h4 className="text-xl font-semibold mb-4 text-gray-800">Follow Us</h4>
                 <div className="flex space-x-4">
-                  <a href="#" className="text-blue-400 hover:text-blue-500 transition-colors">
+                  <a href="https://www.instagram.com/strugghouse/" className="text-blue-400 hover:text-blue-500 transition-colors">
                     <Instagram className="w-6 h-6" />
                   </a>
                 </div>
