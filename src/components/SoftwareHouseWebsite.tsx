@@ -1,7 +1,8 @@
 "use client";
 
 import React, { useState } from 'react';
-import { ChevronDown, Code, Smartphone, Server, Users, Mail, Phone, MapPin, Github, Linkedin, ExternalLink, Menu, X, Instagram } from 'lucide-react';
+import Image from 'next/image';
+import { Code, Smartphone, Server, Mail, MapPin, ExternalLink, Menu, X, Instagram } from 'lucide-react';
 
 const SoftwareHouseWebsite = () => {
   const [activeSection, setActiveSection] = useState('home');
@@ -145,15 +146,15 @@ const SoftwareHouseWebsite = () => {
     // Create email body
     const emailBody = `Hi Strugg House Team,
 
-    Name: ${name}
-    Email: ${email}
-    Subject: ${subject}
+Name: ${name}
+Email: ${email}
+Subject: ${subject}
 
-    Message:
-    ${message}
+Message:
+${message}
 
-    Best regards,
-    ${name}`;
+Best regards,
+${name}`;
 
     // Create mailto link
     const mailtoLink = `mailto:strugghouse@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(emailBody)}`;
@@ -226,27 +227,29 @@ const SoftwareHouseWebsite = () => {
       {/* Hero Section */}
       <section 
         id="home" 
-        className="h-screen flex items-center justify-center px-4 sm:px-6 lg:px-8 relative bg-cover bg-center bg-no-repeat"
+        className="h-screen flex items-center justify-center px-4 sm:px-6 lg:px-8 relative"
       >
         {/* Background with opacity */}
         <div 
           className="absolute inset-0 bg-cover bg-center bg-no-repeat"
           style={{
             backgroundImage: "url('/images/bg-hero2.jpg')",
-            opacity: 0.5, // Adjust between 0.1 to 1.0
+            opacity: 0.7,
           }}
         ></div>
-
+        
         {/* Optional overlay for better text readability */}
-        <div className="absolute inset-0 bg-black/40"></div>
+        <div className="absolute inset-0 bg-black/30"></div>
         
         <div className="max-w-7xl mx-auto relative z-10 w-full">
           <div className="text-center">
             {/* Logo in Hero */}
             <div className="mb-2 flex justify-center">
-              <img 
+              <Image 
                 src="/images/sh-logo.png" 
                 alt="Strugg House" 
+                width={256}
+                height={256}
                 className="h-48 w-auto md:h-64 lg:h-72"
               />
             </div>
@@ -288,7 +291,7 @@ const SoftwareHouseWebsite = () => {
           <div className="text-center mb-16">
             <h2 className="text-4xl font-bold mb-6 text-gray-800">About Us</h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              We're a passionate team of developers and designers dedicated to building smart, reliable, and user-focused digital solutions. Whether it's web applications, mobile apps, or backend systems, we combine creative thinking with proven technical skills to deliver results that work on time and beyond expectations.
+              We&apos;re a passionate team of developers and designers dedicated to building smart, reliable, and user-focused digital solutions. Whether it&apos;s web applications, mobile apps, or backend systems, we combine creative thinking with proven technical skills to deliver results that work on time and beyond expectations.
             </p>
           </div>
           
@@ -366,16 +369,18 @@ const SoftwareHouseWebsite = () => {
           <div className="text-center mb-16">
             <h2 className="text-4xl font-bold mb-6 text-gray-800">Our Portfolio</h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Explore our recent projects and see how we've helped businesses achieve their digital goals.
+              Explore our recent projects and see how we&apos;ve helped businesses achieve their digital goals.
             </p>
           </div>
           
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {portfolio.map((project, index) => (
               <div key={index} className="bg-gray-50 rounded-2xl overflow-hidden hover:scale-105 transition-transform group shadow-md">
-                <img 
+                <Image 
                   src={project.image} 
                   alt={project.title}
+                  width={400}
+                  height={300}
                   className="w-full h-48 object-cover group-hover:scale-110 transition-transform"
                 />
                 <div className="p-6">
@@ -414,9 +419,11 @@ const SoftwareHouseWebsite = () => {
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8 w-full max-w-4xl">
               {team.slice(0, 3).map((member, index) => (
                 <div key={index} className="bg-white rounded-2xl p-6 text-center hover:shadow-lg transition-all group hover:scale-105 shadow-md">
-                  <img 
+                  <Image 
                     src={member.image} 
                     alt={member.name}
+                    width={96}
+                    height={96}
                     className="w-24 h-24 rounded-full mx-auto mb-4 object-cover group-hover:scale-110 transition-transform"
                   />
                   <h3 className="text-xl font-semibold mb-2 text-gray-800">{member.name}</h3>
@@ -436,9 +443,11 @@ const SoftwareHouseWebsite = () => {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8 w-full max-w-2xl">
               {team.slice(3, 5).map((member, index) => (
                 <div key={index + 3} className="bg-white rounded-2xl p-6 text-center hover:shadow-lg transition-all group hover:scale-105 shadow-md">
-                  <img 
+                  <Image 
                     src={member.image} 
                     alt={member.name}
+                    width={96}
+                    height={96}
                     className="w-24 h-24 rounded-full mx-auto mb-4 object-cover group-hover:scale-110 transition-transform"
                   />
                   <h3 className="text-xl font-semibold mb-2 text-gray-800">{member.name}</h3>
@@ -463,7 +472,7 @@ const SoftwareHouseWebsite = () => {
           <div className="text-center mb-16">
             <h2 className="text-4xl font-bold mb-6 text-gray-800">Get In Touch</h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Ready to start your next project? Let's discuss how we can help you achieve your goals.
+              Ready to start your next project? Let&apos;s discuss how we can help you achieve your goals.
             </p>
           </div>
           
@@ -475,10 +484,6 @@ const SoftwareHouseWebsite = () => {
                   <Mail className="w-6 h-6 text-blue-400 mr-4" />
                   <span className="text-gray-700">strugghouse@gmail.com</span>
                 </div>
-                {/* <div className="flex items-center">
-                  <Phone className="w-6 h-6 text-blue-400 mr-4" />
-                  <span className="text-gray-700">+1 (555) 123-4567</span>
-                </div> */}
                 <div className="flex items-center">
                   <MapPin className="w-6 h-6 text-blue-400 mr-4" />
                   <span className="text-gray-700">Surabaya, East Java, Indonesia</span>
